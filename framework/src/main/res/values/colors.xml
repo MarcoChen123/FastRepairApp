@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="blue">#12B7F5</color>
+    <color name="blue_1dbaf4">#1dbaf4</color>
+    <color name="blue_d7eff8">#d7eff8</color>
+    <color name="blue_B4E8FC">#B4E8FC</color>
+    <color name="blue_016DB6">#016DB6</color>
+    <color name="grey">#EBEBEB</color>
+    <color name="grey_333">#333</color>
+    <color name="grey_666">#666</color>
+    <color name="grey_999">#999</color>
+    <color name="grey2">#9D9D9D</color>
+    <color name="grey3">#CCCCCC</color>
+    <color name="grey_f0eff5">#f0eff5</color>
+    <color name="yellow_f8db14">#f8db14</color>
+    <color name="yellow_fe8442">#fe8442</color>
+    <color name="yellow_fb7432">#fb7432</color>
+    <color name="red_be1721">#be1721</color>
+    <color name="orange_fb7141">#fb7f41</color>
+    <color name="gray_friend_tag">#999999</color>
+    <color name="color_cihei">#ff333333</color>
+    <color name="chatting_msg_bg">#FFff0000</color>
+    <color name="green_81d8d0">#81d8d0</color>
+    
+    <color name="tab_text_color_unselected">#FFADAAAD</color>
+    <color name="tab_text_color_selected">#FF12B7F5</color>
+    
+    <!-- 主题蓝色 -->
+    <color name="theam_color">#FF12B7F5</color>
+    <!--  主题灰色-->
+    <color name="theam_gray_color">#ffebebeb</color>
+    
+    <!-- zxing -->
+    <color name="viewfinder_frame">#FFFFFFFF</color>
+    <color name="viewfinder_laser">#ff86f60e</color>
+    <color name="viewfinder_laser_trs">#7f86f60e</color>
+    <color name="viewfinder_mask">#00000000</color>
+    <color name="result_view">#b0000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="transparent">#00000000</color>
+    
+    <!-- 手势解锁 -->
+    <color name="grey_b2b2b2">#B2B2B2</color>
+    <color name="blue_78d2f6">#78D2F6</color>
+    <color name="blue_01aaee">#01AAEE</color>
+    <color name="blue_4996FE">#4996FE</color>
+    <color name="blue_00aaee">#00AAEE</color>
+    <color name="blue_61ACFF">#61ACFF</color>
+    
+    <color name="blue_12b7f5">#12b7f5</color>
+    <color name="red_f3323b">#F3323B</color>
+    <color name="grey_f6f6f6">#f6f6f6</color>
+    <color name="grey_a5a5a5">#A5A5A5</color>
+    <color name="grey_dde1e7">#DDE1E7</color>
+    <color name="grey_EBEBEB">#EBEBEB</color>
+    <color name="red_f4333c">#F4333C</color>
+    <color name="red_f86768">#f86768</color>
+    <color name="purple_93ACFC">#93ACFC</color>
+    <color name="purple_FB6AFB">#FB6AFB</color>
+    <color name="red_FB6A65">#FB6A65</color>
+    <color name="orange_FF7802">#FF7802</color>
+    <color name="orange_FD9F0B">#FD9F0B</color>
+    <color name="orange_FB8524">#FB8524</color>
+    
+    
+    
+    <color name="gray_666666">#666666</color>
+    <color name="gray_55666666">#99666666</color>
+
+    
+    <color name="j_wheel_timebtn_nor">#54a3fa</color>
+    <color name="j_wheel_timebtn_pre">#CCCCCC</color>
+
+    
+    <!-- slidebar 颜色 -->
+    <drawable name="sidebar_click">#EBEBEB</drawable>
+    <drawable name="sidebar_white">#FFFFFF</drawable>
+    
+    <color name="timepicker_line">#e8e8e8</color>
+    <color name="timetimepicker_default_text_color">#999999</color>
+    <color name="timepicker_toolbar_bg">#e60012</color>
+    <color name="timepicker_dialog_bg">#80000000</color>
+    
+    
+    <color name="no1">#FF5CB5B5</color>
+    <color name="no2">#FF52AAAA</color>
+    <color name="no3">#FF429B9B</color>
+    <color name="no4">#FF000000</color>
+    <color name="no5">#FFFFFFFF</color>
+    <color name="no6">#FFEFEFEF</color>
+    <color name="no7">#FFE0E0E0</color>
+    <color name="no8">#FFBDBDBD</color>
+    <color name="no9">#FF989898</color>
+    <color name="no10">#FF757575</color>
+    <color name="no11">#FF4C4C4C</color>
+    <color name="no12">#FF212121</color>
+    <color name="no13">#FFEEFF41</color>
+    <color name="no14">#FFE6EF2E</color>
+
+</resources>

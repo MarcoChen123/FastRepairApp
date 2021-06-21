@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#ffffff">
+
+    <CheckedTextView
+        android:id="@+id/ctv_tab_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:drawableTop="@drawable/ic_launcher"
+        android:gravity="center"
+        android:padding="7dp"
+        android:drawablePadding="5dp"
+        android:singleLine="true"
+        android:textColor="@color/tab_item_color"
+        android:textSize="14sp" />
+
+<!--         style="@style/w_h_w" -->
+    <TextView
+        android:id="@+id/tv_tab_msg"
+        android:layout_width="13dp"
+        android:layout_height="13dp"
+        android:layout_gravity="right|top"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/tab_msg_shape_main"
+        android:gravity="center"
+        android:minHeight="22dp"
+        android:minWidth="22dp"
+        android:padding="2dp"
+        android:singleLine="true"
+        android:textColor="#FFFFFFFF"
+        android:textSize="12sp"
+       android:visibility="gone"
+        />
+
+</FrameLayout>

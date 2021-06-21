@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        >
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:layout_width="147dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_left_radio"
+                android:textColor="@drawable/selector_radio_textcolor"
+                android:textSize="15sp"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:gravity="center"
+                android:button="@null"
+                android:text="工程师会员注册" />
+
+            <RadioButton
+                android:layout_width="147dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_right_radio"
+                android:textColor="@drawable/selector_radio_textcolor"
+                android:textSize="15sp"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:gravity="center"
+                android:button="@null"
+                android:text="企业商家会员注册"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <include layout="@layout/view_engineer_register"/>
+
+</LinearLayout>
