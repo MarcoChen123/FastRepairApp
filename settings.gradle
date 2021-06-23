@@ -1,3 +1,4 @@
 rootProject.name='FastRepairApp'
 include ':app'
 include ':framework'
+include ':ModuleThirdParty'
