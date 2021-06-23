@@ -16,6 +16,10 @@
         android:layout_height="wrap_content"
         android:text="会员中心"/>
 
-
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="登录页面"/>
 </LinearLayout>
 

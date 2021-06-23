@@ -18,28 +18,36 @@
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
     <application
-        android:allowBackup="true"
         android:name="com.chengquan.framework.application.MainApplication"
+        android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:resizeableActivity="true"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme">
         <activity
             android:name=".activity.MainActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.repairmall.EngineerSearchActivity"/>
-        <activity android:name=".activity.vip.VipRegisterActivity"/>
-
+        <activity android:name=".activity.repairmall.EngineerSearchActivity" />
+        <activity android:name=".activity.vip.VipRegisterActivity" />
+        <activity
+            android:name=".activity.login.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.login.AccountLoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.login.RegisterActivity"
+            android:screenOrientation="portrait" />
 
         <meta-data
             android:name="android.notch_support"
-            android:value="true"/>
+            android:value="true" />
         <!--适配小米（xiaomi）刘海屏-->
         <meta-data
             android:name="notch.config"
