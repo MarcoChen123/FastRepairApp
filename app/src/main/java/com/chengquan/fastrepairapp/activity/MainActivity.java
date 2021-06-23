@@ -7,6 +7,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.chengquan.fastrepairapp.R;
+import com.chengquan.fastrepairapp.activity.login.LoginActivity;
 import com.chengquan.fastrepairapp.activity.repairmall.EngineerSearchActivity;
 import com.chengquan.fastrepairapp.activity.vip.VipRegisterActivity;
 import com.chengquan.framework.baseactivity.BaseActivity;
@@ -31,6 +32,14 @@ public class MainActivity extends BaseActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, VipRegisterActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.btn3).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
                 startActivity(intent);
             }
         });
