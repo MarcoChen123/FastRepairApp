@@ -3,7 +3,9 @@ package com.chengquan.fastrepairapp.activity.repairmall;
 import android.os.Bundle;
 
 import com.chengquan.fastrepairapp.R;
+import com.chengquan.fastrepairapp.bean.SuggestEngineerBean;
 import com.chengquan.fastrepairapp.widget.CatgoryRecyclerView;
+import com.chengquan.fastrepairapp.widget.SuggestEngineerRecyclerView;
 import com.chengquan.framework.baseactivity.BaseActivity;
 import com.chengquan.framework.view.BaseRecyclerView;
 
@@ -11,9 +13,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 import androidx.annotation.Nullable;
+import butterknife.BindView;
+import butterknife.ButterKnife;
 
 public class EngineerSearchActivity extends BaseActivity {
-    private CatgoryRecyclerView catgoryRecyclerView;
+    @BindView(R.id.recyclerview)
+    CatgoryRecyclerView catgoryRecyclerView;
+    @BindView(R.id.recyclerview_suggest)
+    SuggestEngineerRecyclerView suggestEngineerRecyclerView;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -23,7 +30,7 @@ public class EngineerSearchActivity extends BaseActivity {
     @Override
     protected void findView() {
         super.findView();
-        catgoryRecyclerView = findViewById(R.id.recyclerview);
+        ButterKnife.bind(this);
     }
 
     @Override
@@ -52,5 +59,11 @@ public class EngineerSearchActivity extends BaseActivity {
         list.add("大修/改造");
         list.add("设计/开发");
         catgoryRecyclerView.setAdapter(list);
+
+        List<SuggestEngineerBean> list2 = new ArrayList<>();
+        list2.add(new SuggestEngineerBean());
+        list2.add(new SuggestEngineerBean());
+        list2.add(new SuggestEngineerBean());
+        suggestEngineerRecyclerView.setAdapter(list2);
     }
 }

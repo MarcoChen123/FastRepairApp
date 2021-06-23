@@ -20,6 +20,7 @@ import com.chengquan.framework.util.DialogUtil;
 import com.gyf.immersionbar.ImmersionBar;
 
 import androidx.annotation.ColorRes;
+import butterknife.ButterKnife;
 
 
 /**
@@ -44,6 +45,7 @@ public class BaseActivity extends Activity {
 
         setContentView(frameRes);
         inflate(layoutRes);
+        ButterKnife.bind(this);
         initTitle();
         findView();
         setListener();

@@ -48,6 +48,7 @@ dependencies {
     //butterknife
     implementation 'com.jakewharton:butterknife:10.1.0'
     annotationProcessor 'com.jakewharton:butterknife-compiler:10.1.0'
+    implementation 'com.qmuiteam:qmui:2.0.0-alpha10'
 }
 
 

@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/white">
 
     <RelativeLayout
         android:id="@+id/rl_top"
@@ -38,13 +40,310 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="254dp">
-
                 <com.chengquan.modulethirdparty.map.TMapView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/ic_shield" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/ic_aim" />
             </RelativeLayout>
 
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp"
+                app:contentPadding="10dp">
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@id/view_dot"
+                            android:text="上海嘉定区外冈镇沪宜公路5812号"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:drawableLeft="@drawable/ic_locate"
+                            android:drawablePadding="8dp"
+                            android:text="自动定位"
+                            android:textColor="#ff36ab41"
+                            android:textSize="10sp" />
+
+                        <View
+                            android:id="@+id/view_dot"
+                            android:layout_width="9dp"
+                            android:layout_height="9dp"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/shape_green_dot" />
+                    </RelativeLayout>
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="19dp"
+                        android:layout_marginTop="15dp"
+                        android:text="点击此处，自定义输入报修位置"
+                        android:textColor="@color/grey_999"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#DCDCDC" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/shape_engineer_range"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="6dp"
+                        android:paddingBottom="6dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:drawableLeft="@drawable/ic_search_engineer"
+                            android:drawablePadding="10dp"
+                            android:text="选择查找工程师的区域和范围"
+                            android:textColor="#7C7A7A"
+                            android:textSize="12sp" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_toLeftOf="@id/ll_range"
+                            android:layout_marginRight="8dp"
+                            android:background="#E5E5E5"/>
+
+                        <LinearLayout
+                            android:id="@+id/ll_range"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#7C7A7A"
+                                android:layout_marginRight="8dp"
+                                android:text="20KM"/>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_arrow_down" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="17dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="为您提供地图精准查找工程师"
+                            android:textSize="12sp"
+                            android:textColor="@color/grey_333"
+                            android:drawableLeft="@drawable/ic_map"
+                            android:drawablePadding="10dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:textSize="11sp"
+                            android:text="进入地图查找 >>"
+                            android:textColor="#36AB41"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="确认查询工程师"
+                app:qmui_radius="5dp"
+                app:qmui_backgroundColor="#016DB6"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:padding="13dp"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                android:layout_margin="10dp">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingTop="11dp"
+                    android:paddingLeft="13dp"
+                    android:paddingRight="7dp"
+                    android:background="@drawable/shape_recruit_engineer">
+
+                    <TextView
+                        android:id="@+id/tv_recruit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="招募工程师"
+                        android:textSize="15sp"
+                        android:textColor="#FF7234"/>
+
+                    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:qmui_radius="20dp"
+                        app:qmui_backgroundColor="#FF7234"
+                        android:textColor="@color/white"
+                        android:textSize="9sp"
+                        android:paddingLeft="7dp"
+                        android:paddingRight="7dp"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_below="@id/tv_recruit"
+                        android:text="点击加入"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/ic_repair_ticket"/>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingTop="11dp"
+                    android:paddingLeft="13dp"
+                    android:paddingRight="7dp"
+                    android:layout_marginLeft="7dp"
+                    android:background="@drawable/shape_repair_order">
+
+                    <TextView
+                        android:id="@+id/tv_repair_order"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="提交订单报修"
+                        android:textSize="15sp"
+                        android:textColor="#36AB41"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="根据订单需求由平台\n客服推送工程师"
+                        android:layout_below="@id/tv_repair_order"
+                        android:textColor="@color/grey_333"
+                        android:textSize="9sp"
+                        android:layout_marginTop="6dp"/>
+
+
+                    <ImageView
+                        android:id="@+id/iv_repair_order"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/ic_repair_ticket"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#D2D2D2"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="/"
+                    android:textSize="15sp"
+                    android:textColor="#D2D2D2"
+                    android:layout_marginRight="-2dp"
+                    android:layout_toLeftOf="@id/tv_suggest_engineer"/>
+
+                <TextView
+                    android:id="@+id/tv_suggest_engineer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:background="@color/white"
+                    android:text="推荐工程师"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:layout_centerInParent="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="/"
+                    android:textSize="15sp"
+                    android:textColor="#D2D2D2"
+                    android:layout_marginLeft="-2dp"
+                    android:layout_toRightOf="@id/tv_suggest_engineer"/>
+            </RelativeLayout>
+
+            <com.chengquan.fastrepairapp.widget.SuggestEngineerRecyclerView
+                android:id="@+id/recyclerview_suggest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
 
         </LinearLayout>
     </ScrollView>
