@@ -20,7 +20,7 @@
             android:src="@drawable/ic_catgory" />
 
 
-        <com.chengquan.fastrepairapp.widget.CatgoryRecyclerView
+        <com.chengquan.fastrepairapp.widget.CategoryRecyclerView
             android:id="@+id/recyclerview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -220,6 +220,7 @@
                 android:orientation="horizontal"
                 android:layout_margin="10dp">
                 <RelativeLayout
+                    android:id="@+id/rl_recruit_engineer"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -260,6 +261,7 @@
 
 
                 <RelativeLayout
+                    android:id="@+id/rl_submit_order"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -347,6 +349,13 @@
 
         </LinearLayout>
     </ScrollView>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        layout="@layout/view_search_goods"
+        android:layout_below="@id/rl_top"/>
 
 
 </RelativeLayout>

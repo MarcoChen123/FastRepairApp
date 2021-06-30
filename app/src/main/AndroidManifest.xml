@@ -33,8 +33,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.repairmall.EngineerSearchActivity" />
-        <activity android:name=".activity.vip.VipRegisterActivity" />
+        <activity android:name=".activity.repairmall.EngineerSearchActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.vip.VipRegisterActivity"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".activity.login.LoginActivity"
             android:screenOrientation="portrait" />
@@ -44,6 +46,14 @@
         <activity
             android:name=".activity.login.RegisterActivity"
             android:screenOrientation="portrait" />
+        <activity android:name=".activity.repairmall.CompanyDataActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.repairmall.RecruitEngineerActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity android:name=".activity.repairmall.SubmitOrderActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
 
         <meta-data
             android:name="android.notch_support"
