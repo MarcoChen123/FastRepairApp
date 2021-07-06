@@ -20,14 +20,14 @@
             android:src="@drawable/ic_catgory" />
 
 
-        <com.chengquan.fastrepairapp.widget.CategoryRecyclerView
+        <com.chengquan.fastrepairapp.widget.repair.CategoryRecyclerView
             android:id="@+id/recyclerview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_toLeftOf="@id/iv_catgory" />
     </RelativeLayout>
 
-    <ScrollView
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/rl_top">
@@ -253,10 +253,11 @@
                         android:text="点击加入"/>
 
                     <ImageView
+
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
-                        android:src="@drawable/ic_repair_ticket"/>
+                        android:src="@drawable/ic_zhaopin"/>
                 </RelativeLayout>
 
 
@@ -342,13 +343,13 @@
                     android:layout_toRightOf="@id/tv_suggest_engineer"/>
             </RelativeLayout>
 
-            <com.chengquan.fastrepairapp.widget.SuggestEngineerRecyclerView
+            <com.chengquan.fastrepairapp.widget.repair.SuggestEngineerRecyclerView
                 android:id="@+id/recyclerview_suggest"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
 
         </LinearLayout>
-    </ScrollView>
+    </androidx.core.widget.NestedScrollView>
 
     <include
         android:layout_width="match_parent"

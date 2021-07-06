@@ -33,6 +33,12 @@
                 android:paddingBottom="12dp"
                 android:background="#F5F5F5">
 
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/weixiu_bg"/>
+
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -234,7 +240,7 @@
                 app:tabGravity="fill"
                 app:tabIndicatorHeight="2dp"/>
 
-            <com.chengquan.fastrepairapp.widget.CustomViewPager
+            <com.chengquan.fastrepairapp.widget.repair.CustomViewPager
                 android:id="@+id/viewpager"
                 android:background="@color/white"
                 android:layout_width="match_parent"

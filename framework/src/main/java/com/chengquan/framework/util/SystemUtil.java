@@ -29,6 +29,7 @@ import com.chengquan.framework.BuildConfig;
 import com.chengquan.framework.R;
 import com.chengquan.framework.application.MainApplication;
 
+import java.io.File;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -240,6 +241,14 @@ public class SystemUtil {
      */
     public static String getSDCardPath() {
         return Environment.getExternalStorageDirectory().getAbsolutePath();
+    }
+
+    public static String getCrashPath(){
+        File crashFile = MainApplication.getContext().getExternalFilesDir("crash");
+        if(!crashFile.exists()){
+            crashFile.mkdirs();
+        }
+        return crashFile.getAbsolutePath();
     }
 
     public static int getScreenWidth(Context context){

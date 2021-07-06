@@ -6,14 +6,14 @@ import android.view.View;
 import android.widget.LinearLayout;
 
 import com.chengquan.fastrepairapp.R;
-import com.chengquan.fastrepairapp.bean.GoodsCategoryBean;
-import com.chengquan.fastrepairapp.bean.GoodsDetailBean;
-import com.chengquan.fastrepairapp.bean.SuggestEngineerBean;
-import com.chengquan.fastrepairapp.widget.CategoryRecyclerView;
-import com.chengquan.fastrepairapp.widget.GoodsCategoryRecyclerView;
-import com.chengquan.fastrepairapp.widget.GoodsDetailRecyclerView;
-import com.chengquan.fastrepairapp.widget.HotBrandRecyclerView;
-import com.chengquan.fastrepairapp.widget.SuggestEngineerRecyclerView;
+import com.chengquan.fastrepairapp.bean.repair.GoodsCategoryBean;
+import com.chengquan.fastrepairapp.bean.repair.GoodsDetailBean;
+import com.chengquan.fastrepairapp.bean.repair.SuggestEngineerBean;
+import com.chengquan.fastrepairapp.widget.repair.CategoryRecyclerView;
+import com.chengquan.fastrepairapp.widget.repair.GoodsCategoryRecyclerView;
+import com.chengquan.fastrepairapp.widget.repair.GoodsDetailRecyclerView;
+import com.chengquan.fastrepairapp.widget.repair.HotBrandRecyclerView;
+import com.chengquan.fastrepairapp.widget.repair.SuggestEngineerRecyclerView;
 import com.chengquan.framework.baseactivity.BaseActivity;
 import com.chengquan.framework.view.BaseRecyclerView;
 

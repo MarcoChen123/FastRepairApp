@@ -36,7 +36,7 @@
             android:gravity="center_vertical"/>
     </RelativeLayout>
 
-    <com.chengquan.fastrepairapp.widget.HotBrandRecyclerView
+    <com.chengquan.fastrepairapp.widget.repair.HotBrandRecyclerView
         android:id="@+id/recyclerview_hot_brand"
         android:background="@color/white"
         android:layout_width="match_parent"
@@ -65,13 +65,13 @@
         android:paddingTop="9dp"
         android:orientation="horizontal"
         android:background="#F4F5F7">
-        <com.chengquan.fastrepairapp.widget.GoodsCategoryRecyclerView
+        <com.chengquan.fastrepairapp.widget.repair.GoodsCategoryRecyclerView
             android:id="@+id/recyclerview_goods_category"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginLeft="10dp"/>
 
-        <com.chengquan.fastrepairapp.widget.GoodsDetailRecyclerView
+        <com.chengquan.fastrepairapp.widget.repair.GoodsDetailRecyclerView
             android:id="@+id/recyclerview_goods_detail"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

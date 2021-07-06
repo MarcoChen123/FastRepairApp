@@ -16,8 +16,8 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.chengquan.fastrepairapp.impl.OnDialogClickListener;
 import com.chengquan.framework.R;
+import com.chengquan.framework.impl.OnDialogClickListener;
 
 
 public class DialogUtil {

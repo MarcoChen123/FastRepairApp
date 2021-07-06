@@ -234,83 +234,65 @@
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp">
 
-            <CheckBox
+            <com.chengquan.fastrepairapp.widget.repair.LabelCheckbox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:button="@null"
-                android:textColor="@drawable/selector_order_textcolor"
-                android:background="@drawable/selector_order_checkbox"
-                android:paddingTop="9dp"
-                android:paddingBottom="9dp"
-                android:paddingLeft="15dp"
-                android:paddingRight="15dp"
-                android:textSize="12sp"
-                android:text="自备工具"/>
+                app:checkbox_paddingTop="9dp"
+                app:checkbox_paddingBottom="9dp"
+                app:checkbox_paddingLeft="15dp"
+                app:checkbox_paddingRight="15dp"
+                app:checkbox_textSize="12sp"
+                app:checkbox_text="自备工具"/>
 
-            <CheckBox
+            <com.chengquan.fastrepairapp.widget.repair.LabelCheckbox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:button="@null"
-                android:textColor="@drawable/selector_order_textcolor"
-                android:background="@drawable/selector_order_checkbox"
-                android:paddingTop="9dp"
-                android:paddingBottom="9dp"
-                android:paddingLeft="15dp"
-                android:paddingRight="15dp"
-                android:textSize="12sp"
-                android:text="需要驻场"/>
+                app:checkbox_paddingTop="9dp"
+                app:checkbox_paddingBottom="9dp"
+                app:checkbox_paddingLeft="15dp"
+                app:checkbox_paddingRight="15dp"
+                app:checkbox_textSize="12sp"
+                app:checkbox_text="需要驻场"/>
 
-            <CheckBox
+            <com.chengquan.fastrepairapp.widget.repair.LabelCheckbox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:button="@null"
-                android:textColor="@drawable/selector_order_textcolor"
-                android:background="@drawable/selector_order_checkbox"
-                android:paddingTop="9dp"
-                android:paddingBottom="9dp"
-                android:paddingLeft="15dp"
-                android:paddingRight="15dp"
-                android:textSize="12sp"
-                android:text="承担差旅"/>
+                app:checkbox_paddingTop="9dp"
+                app:checkbox_paddingBottom="9dp"
+                app:checkbox_paddingLeft="15dp"
+                app:checkbox_paddingRight="15dp"
+                app:checkbox_textSize="12sp"
+                app:checkbox_text="承担差旅"/>
 
-            <CheckBox
+            <com.chengquan.fastrepairapp.widget.repair.LabelCheckbox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:button="@null"
-                android:textColor="@drawable/selector_order_textcolor"
-                android:background="@drawable/selector_order_checkbox"
-                android:paddingTop="9dp"
-                android:paddingBottom="9dp"
-                android:paddingLeft="15dp"
-                android:paddingRight="15dp"
-                android:textSize="12sp"
-                android:text="接受上门费"/>
+                app:checkbox_paddingTop="9dp"
+                app:checkbox_paddingBottom="9dp"
+                app:checkbox_paddingLeft="15dp"
+                app:checkbox_paddingRight="15dp"
+                app:checkbox_textSize="12sp"
+                app:checkbox_text="接受上门费"/>
 
-            <CheckBox
+            <com.chengquan.fastrepairapp.widget.repair.LabelCheckbox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:button="@null"
-                android:textColor="@drawable/selector_order_textcolor"
-                android:background="@drawable/selector_order_checkbox"
-                android:paddingTop="9dp"
-                android:paddingBottom="9dp"
-                android:paddingLeft="15dp"
-                android:paddingRight="15dp"
-                android:textSize="12sp"
-                android:text="选择维修企业"/>
+                app:checkbox_paddingTop="9dp"
+                app:checkbox_paddingBottom="9dp"
+                app:checkbox_paddingLeft="15dp"
+                app:checkbox_paddingRight="15dp"
+                app:checkbox_textSize="12sp"
+                app:checkbox_text="选择维修企业"/>
 
-            <CheckBox
+            <com.chengquan.fastrepairapp.widget.repair.LabelCheckbox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:button="@null"
-                android:textColor="@drawable/selector_order_textcolor"
-                android:background="@drawable/selector_order_checkbox"
-                android:paddingTop="9dp"
-                android:paddingBottom="9dp"
-                android:paddingLeft="15dp"
-                android:paddingRight="15dp"
-                android:textSize="12sp"
-                android:text="选择附近"/>
+                app:checkbox_paddingTop="9dp"
+                app:checkbox_paddingBottom="9dp"
+                app:checkbox_paddingLeft="15dp"
+                app:checkbox_paddingRight="15dp"
+                app:checkbox_textSize="12sp"
+                app:checkbox_text="选择附近"/>
 
             <RadioGroup
                 android:layout_width="wrap_content"

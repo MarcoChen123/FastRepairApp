@@ -3,11 +3,11 @@ package com.chengquan.fastrepairapp.activity.repairmall;
 import android.os.Bundle;
 
 import com.chengquan.fastrepairapp.R;
-import com.chengquan.fastrepairapp.fragment.CaseFragment;
-import com.chengquan.fastrepairapp.fragment.CertificateFragment;
-import com.chengquan.fastrepairapp.fragment.CustomerCommentFragment;
-import com.chengquan.fastrepairapp.fragment.EngineerIntroFragment;
-import com.chengquan.fastrepairapp.widget.CustomViewPager;
+import com.chengquan.fastrepairapp.fragment.repair.CasePictureFragment;
+import com.chengquan.fastrepairapp.fragment.repair.CertificateFragment;
+import com.chengquan.fastrepairapp.fragment.repair.CustomerCommentFragment;
+import com.chengquan.fastrepairapp.fragment.repair.EngineerIntroFragment;
+import com.chengquan.fastrepairapp.widget.repair.CustomViewPager;
 import com.chengquan.framework.baseactivity.BaseActivity;
 import com.google.android.material.tabs.TabLayout;
 
@@ -54,7 +54,7 @@ public class CompanyDataActivity extends BaseActivity {
     private void initViewPager(){
         fragmentList.add(new EngineerIntroFragment());
         fragmentList.add(new CustomerCommentFragment());
-        fragmentList.add(new CaseFragment());
+        fragmentList.add(new CasePictureFragment());
         fragmentList.add(new CertificateFragment());
         MyAdapter adapter = new MyAdapter(getSupportFragmentManager(), FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
         viewPager.setAdapter(adapter);
