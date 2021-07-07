@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
+import android.graphics.Point;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
@@ -19,13 +20,16 @@ import android.os.Looper;
 import android.os.Vibrator;
 import android.provider.ContactsContract;
 import android.util.Log;
+import android.view.Display;
 import android.view.View;
+import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
 
 import com.chengquan.framework.BuildConfig;
 import com.chengquan.framework.R;
 import com.chengquan.framework.application.MainApplication;
 
+import java.io.File;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -237,6 +241,28 @@ public class SystemUtil {
      */
     public static String getSDCardPath() {
         return Environment.getExternalStorageDirectory().getAbsolutePath();
+    }
+
+    public static String getCrashPath(){
+        File crashFile = MainApplication.getContext().getExternalFilesDir("crash");
+        if(!crashFile.exists()){
+            crashFile.mkdirs();
+        }
+        return crashFile.getAbsolutePath();
+    }
+
+    public static int getScreenWidth(Context context){
+        if(context == null){
+            return 0;
+        }
+        WindowManager windowManager = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
+        Display display = windowManager.getDefaultDisplay();
+        if(Build.VERSION.SDK_INT < 13){
+            return display.getWidth();
+        }
+        Point point = new Point();
+        display.getSize(point);
+        return point.x;
     }
 
 }

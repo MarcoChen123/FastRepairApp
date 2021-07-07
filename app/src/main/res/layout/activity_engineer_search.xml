@@ -20,14 +20,14 @@
             android:src="@drawable/ic_catgory" />
 
 
-        <com.chengquan.fastrepairapp.widget.CatgoryRecyclerView
+        <com.chengquan.fastrepairapp.widget.repair.CategoryRecyclerView
             android:id="@+id/recyclerview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_toLeftOf="@id/iv_catgory" />
     </RelativeLayout>
 
-    <ScrollView
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/rl_top">
@@ -220,6 +220,7 @@
                 android:orientation="horizontal"
                 android:layout_margin="10dp">
                 <RelativeLayout
+                    android:id="@+id/rl_recruit_engineer"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -252,14 +253,16 @@
                         android:text="点击加入"/>
 
                     <ImageView
+
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
-                        android:src="@drawable/ic_repair_ticket"/>
+                        android:src="@drawable/ic_zhaopin"/>
                 </RelativeLayout>
 
 
                 <RelativeLayout
+                    android:id="@+id/rl_submit_order"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -340,13 +343,20 @@
                     android:layout_toRightOf="@id/tv_suggest_engineer"/>
             </RelativeLayout>
 
-            <com.chengquan.fastrepairapp.widget.SuggestEngineerRecyclerView
+            <com.chengquan.fastrepairapp.widget.repair.SuggestEngineerRecyclerView
                 android:id="@+id/recyclerview_suggest"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
 
         </LinearLayout>
-    </ScrollView>
+    </androidx.core.widget.NestedScrollView>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        layout="@layout/view_search_goods"
+        android:layout_below="@id/rl_top"/>
 
 
 </RelativeLayout>

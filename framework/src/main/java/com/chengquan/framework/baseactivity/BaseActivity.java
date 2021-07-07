@@ -20,6 +20,7 @@ import com.chengquan.framework.util.DialogUtil;
 import com.gyf.immersionbar.ImmersionBar;
 
 import androidx.annotation.ColorRes;
+import androidx.fragment.app.FragmentActivity;
 import butterknife.ButterKnife;
 
 
@@ -29,7 +30,7 @@ import butterknife.ButterKnife;
  * @TODO 用于配置title
  * @date 创建时间：2016年9月6日 下午4:28:39 *
  */
-public class BaseActivity extends Activity {
+public class BaseActivity extends FragmentActivity {
     protected Dialog mDialog;
     private FrameLayout mView;
     // 导航栏控件

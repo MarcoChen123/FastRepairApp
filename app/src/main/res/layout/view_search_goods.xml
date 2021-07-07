@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/ll_search_goods"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="热门品牌"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:drawablePadding="5dp"
+            android:drawableLeft="@drawable/ic_hot_brand"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="换一换"
+            android:textSize="12sp"
+            android:drawableLeft="@drawable/ic_refresh"
+            android:layout_centerVertical="true"
+            android:drawablePadding="5dp"
+            android:textColor="@color/blue_016DB6"
+            android:gravity="center_vertical"/>
+    </RelativeLayout>
+
+    <com.chengquan.fastrepairapp.widget.repair.HotBrandRecyclerView
+        android:id="@+id/recyclerview_hot_brand"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_search_brand"
+        android:background="@drawable/shape_solid_grey_50"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="9dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="13dp"
+        android:drawablePadding="7dp"
+        android:textColor="@color/grey_333"
+        android:hint="请输入商品名称"
+        android:textColorHint="#ADADAD"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="9dp"
+        android:orientation="horizontal"
+        android:background="#F4F5F7">
+        <com.chengquan.fastrepairapp.widget.repair.GoodsCategoryRecyclerView
+            android:id="@+id/recyclerview_goods_category"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"/>
+
+        <com.chengquan.fastrepairapp.widget.repair.GoodsDetailRecyclerView
+            android:id="@+id/recyclerview_goods_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+    </LinearLayout>
+
+</LinearLayout>

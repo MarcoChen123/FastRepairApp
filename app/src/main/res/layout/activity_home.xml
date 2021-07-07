@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.chengquan.framework.tab.TabView
+        android:id="@+id/tabView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:tab_textViewSelColor="@color/blue_2A84FF"
+        app:tab_textViewUnSelColor="@color/grey_333"
+        app:tab_textViewSize="12sp"
+        app:tab_tabViewHeight="55dp"
+        ></com.chengquan.framework.tab.TabView>
+</RelativeLayout>
