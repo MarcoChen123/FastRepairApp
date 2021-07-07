@@ -47,7 +47,6 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState, R.layout.activity_login, "会员登录");
-        ButterKnife.bind(this);
     }
 
     @Override

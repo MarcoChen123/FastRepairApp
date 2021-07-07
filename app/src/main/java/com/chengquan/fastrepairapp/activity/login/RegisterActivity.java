@@ -55,7 +55,6 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
     @Override
     protected void findView() {
         super.findView();
-        ButterKnife.bind(this);
     }
 
     @Override

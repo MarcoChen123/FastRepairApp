@@ -37,7 +37,6 @@ public class AccountLoginActivity extends BaseActivity implements View.OnClickLi
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState, R.layout.activity_account_login, "会员登录");
-        ButterKnife.bind(this);
     }
 
     @Override
