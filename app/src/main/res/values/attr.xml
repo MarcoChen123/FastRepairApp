@@ -21,4 +21,9 @@
         <attr name="checkbox_textColor" format="color"/>
         <attr name="checkbox_checked" format="boolean"/>
     </declare-styleable>
+
+    <declare-styleable name="HomeSearchView">
+        <attr name="search_hint" format="string"/>
+        <attr name="search_show_scan" format="boolean"/>
+    </declare-styleable>
 </resources>

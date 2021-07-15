@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:theme="@style/Theme.AppCompat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="13dp"
+        android:paddingBottom="13dp"
+        android:background="@color/blue_016DB6">
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:background="@drawable/shape_white_corner_50"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            android:hint="按订单编号 / 手机号码搜索"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textColor="#A2A2A2"
+            android:textColorHint="#A2A2A2"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/et_search"
+            android:src="@drawable/ic_search_brand"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"/>
+    </RelativeLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:tabTextColor="@color/grey_333"
+        app:tabSelectedTextColor="@color/blue_016DB6"
+        app:tabIndicatorColor="@color/blue_016DB6"
+        app:tabTextAppearance="@style/TabLayoutTheme"
+        app:tabGravity="fill"
+        app:tabIndicatorFullWidth="false"
+        app:tabIndicatorHeight="2dp"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>

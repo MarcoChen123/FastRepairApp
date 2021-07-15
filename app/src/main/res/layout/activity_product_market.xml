@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F4F4F4"
+        android:orientation="vertical">
+        <com.youth.banner.Banner
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="210dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="13dp"
+            android:paddingBottom="13dp">
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:background="@drawable/shape_white_corner_50"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:hint="请输入要搜索的商品名称…"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:textColor="#A2A2A2"
+                android:textColorHint="#A2A2A2"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/et_search"
+                android:src="@drawable/ic_search_brand"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp">
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="12dp"
+                android:background="@color/blue_2A84FF" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:text="特价商品"
+                android:textColor="#ff282828"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="12dp"
+                android:text="更多"
+                android:textColor="#ff787878"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <com.chengquan.fastrepairapp.widget.market.SpecialOfferRecyclerView
+            android:id="@+id/recycler_special_offer"
+            android:background="@color/white"
+            android:layout_marginTop="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp">
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="12dp"
+                android:background="@color/blue_2A84FF" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:text="限时抢购"
+                android:textColor="#ff282828"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="12dp"
+                android:text="更多"
+                android:textColor="#ff787878"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <com.chengquan.fastrepairapp.widget.market.FlashSaleRecyclerView
+            android:id="@+id/recycler_flash_sale"
+            android:background="@color/white"
+            android:layout_marginTop="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp">
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="12dp"
+                android:background="@color/blue_2A84FF" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:text="推荐商家"
+                android:textColor="#ff282828"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="12dp"
+                android:text="更多"
+                android:textColor="#ff787878"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <com.chengquan.fastrepairapp.widget.market.MarketShopRecyclerView
+            android:id="@+id/recycler_shop"
+            android:background="@color/white"
+            android:layout_marginTop="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

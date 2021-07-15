@@ -7,6 +7,7 @@ import com.chengquan.fastrepairapp.fragment.repair.CasePictureFragment;
 import com.chengquan.fastrepairapp.fragment.repair.CertificateFragment;
 import com.chengquan.fastrepairapp.fragment.repair.CustomerCommentFragment;
 import com.chengquan.fastrepairapp.fragment.repair.EngineerIntroFragment;
+import com.chengquan.fastrepairapp.widget.order.ViewPagerAdapter;
 import com.chengquan.fastrepairapp.widget.repair.CustomViewPager;
 import com.chengquan.framework.baseactivity.BaseActivity;
 import com.google.android.material.tabs.TabLayout;
@@ -28,6 +29,7 @@ public class CompanyDataActivity extends BaseActivity {
     @BindView(R.id.viewpager)
     CustomViewPager viewPager;
 
+    private String[] tabs = {"工程师介绍", "客户评价", "案例图片", "工程师证书"};
     private List<Fragment> fragmentList = new ArrayList<>();
 
     @Override
@@ -44,7 +46,7 @@ public class CompanyDataActivity extends BaseActivity {
 
     private void initTabLayout(){
         initViewPager();
-        String[] tabs = {"工程师介绍", "客户评价", "案例图片", "工程师证书"};
+
         for (String s : tabs) {
             tabLayout.addTab(tabLayout.newTab().setText(s));
         }
@@ -56,7 +58,7 @@ public class CompanyDataActivity extends BaseActivity {
         fragmentList.add(new CustomerCommentFragment());
         fragmentList.add(new CasePictureFragment());
         fragmentList.add(new CertificateFragment());
-        MyAdapter adapter = new MyAdapter(getSupportFragmentManager(), FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
+        ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager(),tabs, fragmentList);
         viewPager.setAdapter(adapter);
         viewPager.setOffscreenPageLimit(4);
         viewPager.post(new Runnable() {
@@ -85,31 +87,5 @@ public class CompanyDataActivity extends BaseActivity {
 
             }
         });
-    }
-
-    class MyAdapter extends FragmentPagerAdapter{
-
-        private String[] tabs = {"工程师介绍", "客户评价", "案例图片", "工程师证书"};
-
-        public MyAdapter(@NonNull FragmentManager fm, int behavior) {
-            super(fm, behavior);
-        }
-
-        @Nullable
-        @Override
-        public CharSequence getPageTitle(int position) {
-            return tabs[position];
-        }
-
-        @NonNull
-        @Override
-        public Fragment getItem(int position) {
-            return fragmentList.get(position);
-        }
-
-        @Override
-        public int getCount() {
-            return fragmentList.size();
-        }
     }
 }

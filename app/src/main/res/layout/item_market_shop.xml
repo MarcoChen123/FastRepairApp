@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:elevation="10dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="10dp"
+        app:contentPaddingBottom="13dp"
+        app:contentPaddingLeft="10dp"
+        app:contentPaddingRight="12dp"
+        app:contentPaddingTop="13dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_ff581d_corner_50"
+                    android:paddingLeft="6dp"
+                    android:paddingTop="2dp"
+                    android:paddingRight="6dp"
+                    android:paddingBottom="2dp"
+                    android:text="已认证"
+                    android:textColor="@color/white"
+                    android:textSize="9sp" />
+
+                <RatingBar
+                    android:id="@+id/ratingbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:layout_below="@id/tv_name"
+                    android:layout_marginLeft="6dp"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:progressDrawable="@drawable/ratingbar" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:src="@drawable/ic_test_robot" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="常州凯顿机械设备有限公司"
+                        android:textColor="#ff282828"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_industry"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="行业：机器人应用"
+                        android:textColor="#ff666666"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/tv_category"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="类别：#生产商#"
+                        android:textColor="#ff666666"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/tv_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="地址：常州市新北区西夏墅镇微山湖路106号"
+                        android:textColor="#ff666666"
+                        android:textSize="10sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="83dp"
+                android:layout_height="83dp"
+                android:layout_marginTop="19dp"
+                android:src="@drawable/ic_test_shukong" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tv_update_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8小时前更新"
+                    android:textColor="#ff666666"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="查看详情>>"
+                    android:textColor="#ff2a84ff"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="21dp"
+                android:layout_marginTop="7dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_bubble_triangle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-5dp"
+                android:background="@drawable/shape_eeeeee_corner_2"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/tv_look_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1212"
+                    android:textColor="@color/blue_2A84FF"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="人浏览"
+                    android:textColor="@color/grey_333"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/tv_good"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="10"
+                    android:textColor="@color/blue_2A84FF"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="人点赞"
+                    android:textColor="@color/grey_333"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/tv_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="8"
+                    android:textColor="@color/blue_2A84FF"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="人扩散"
+                    android:textColor="@color/grey_333"
+                    android:textSize="10sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

@@ -1,4 +1,4 @@
-package com.chengquan.fastrepairapp.fragment.home;
+package com.chengquan.fastrepairapp.bean.home;
 
 
 import java.util.ArrayList;

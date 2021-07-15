@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F4F4F4"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="28dp"
+        android:paddingTop="35dp"
+        android:paddingRight="28dp"
+        android:paddingBottom="100dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上传说明"
+            android:textColor="#ff212121"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="支持类型："
+                android:textColor="#ff333333"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="图片，文档，视频"
+                android:textColor="@color/grey_999"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="操作说明："
+                android:textColor="#ff333333"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.2"
+                android:text="点击“加号”，自动上传文件，系统会显示上传进度所有文件上传完毕，点击“确定”按钮返回前页"
+                android:textColor="@color/grey_999"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="28dp"
+            android:background="#D2D2D2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="上传文件列表"
+            android:textColor="#ff212121"
+            android:textSize="14sp" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/ic_add_photo"/>
+
+    </LinearLayout>
+
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:text="确定"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        app:qmui_backgroundColor="@color/blue_016DB6"
+        app:qmui_radius="6dp"
+        android:elevation="8dp"
+        android:padding="12dp"
+        android:layout_marginTop="42dp"/>
+
+
+</LinearLayout>

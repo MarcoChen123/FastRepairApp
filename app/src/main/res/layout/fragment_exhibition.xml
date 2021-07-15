@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_016DB6"
+        android:gravity="center"
+        android:padding="13dp"
+        android:text="展会首页"
+        android:textColor="@color/white"
+        android:textSize="19sp" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E5E9F5"
+                android:paddingLeft="13dp"
+                android:paddingTop="10dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="8dp">
+
+                <com.chengquan.fastrepairapp.widget.home.HomeSearchView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="7dp"
+                    android:layout_toLeftOf="@id/btn_search"
+                    app:search_hint="在急速快修中搜索"
+                    app:search_show_scan="false" />
+
+                <Button
+                    android:id="@+id/btn_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/shape_016db6_solid50"
+                    android:paddingLeft="11dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="11dp"
+                    android:paddingBottom="10dp"
+                    android:text="立即搜索"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <com.youth.banner.Banner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="173dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#F4F4F4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="6dp"
+                android:paddingBottom="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/ic_exhibition_schedule"
+                    android:drawablePadding="7dp"
+                    android:gravity="center"
+                    android:text="展会档期"
+                    android:textColor="@color/grey_333"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/ic_exhibition_news"
+                    android:drawablePadding="7dp"
+                    android:gravity="center"
+                    android:text="展会资讯"
+                    android:textColor="@color/grey_333"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/ic_exhibition_effect"
+                    android:drawablePadding="7dp"
+                    android:gravity="center"
+                    android:text="展会效果"
+                    android:textColor="@color/grey_333"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/ic_exhibition_book"
+                    android:drawablePadding="7dp"
+                    android:gravity="center"
+                    android:text="展会预定"
+                    android:textColor="@color/grey_333"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="#F4F4F4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="14dp"
+                android:paddingTop="10dp"
+                android:paddingRight="14dp"
+                android:paddingBottom="10dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_toutiao" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="7dp"
+                    android:background="#E5E5E5" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_weight="1"
+                    android:text="70年来沈阳工业远不止新中国第一台机床"
+                    android:textColor="#ff333333"
+                    android:textSize="10sp" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow_right" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#F4F4F4" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="12dp"
+                android:paddingTop="15dp"
+                android:paddingRight="12dp"
+                android:paddingBottom="15dp">
+
+                <View
+                    android:id="@+id/view_blue"
+                    android:layout_width="3dp"
+                    android:layout_height="15dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/shape_2a84ff_corner_2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="7dp"
+                    android:layout_toRightOf="@id/view_blue"
+                    android:text="展会资讯"
+                    android:textColor="#ff282828"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="更多"
+                    android:textColor="#ff787878"
+                    android:textSize="11sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="#F4F4F4" />
+
+            <com.chengquan.fastrepairapp.widget.exhibition.ExhibitionNewsRecyclerView
+                android:id="@+id/recycler_exhibition_news"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#F4F4F4" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="12dp"
+                android:paddingTop="15dp"
+                android:paddingRight="12dp"
+                android:paddingBottom="15dp">
+
+                <View
+                    android:id="@+id/view__schedule_blue"
+                    android:layout_width="3dp"
+                    android:layout_height="15dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/shape_2a84ff_corner_2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="7dp"
+                    android:layout_toRightOf="@id/view__schedule_blue"
+                    android:text="展会档期"
+                    android:textColor="#ff282828"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="更多"
+                    android:textColor="#ff787878"
+                    android:textSize="11sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="#F4F4F4" />
+
+            <com.chengquan.fastrepairapp.widget.exhibition.ExhibitionScheduleRecyclerView
+                android:id="@+id/recycler_exhibition_schedule"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

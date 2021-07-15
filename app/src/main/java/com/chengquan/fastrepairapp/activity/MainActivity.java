@@ -12,9 +12,11 @@ import com.chengquan.fastrepairapp.R;
 import com.chengquan.fastrepairapp.activity.login.LoginActivity;
 import com.chengquan.fastrepairapp.activity.repairmall.EngineerSearchActivity;
 import com.chengquan.fastrepairapp.activity.vip.VipRegisterActivity;
+import com.chengquan.fastrepairapp.bean.home.HomeDataBean;
 import com.chengquan.framework.api.JsonCallback;
 import com.chengquan.framework.baseactivity.BaseActivity;
 import com.chengquan.framework.util.ImagePickerUtil;
+import com.chengquan.framework.util.OkGoUtil;
 import com.chengquan.framework.util.SystemUtil;
 import com.lzy.imagepicker.ImagePicker;
 import com.lzy.imagepicker.bean.ImageItem;
@@ -37,7 +39,7 @@ public class MainActivity extends BaseActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, EngineerSearchActivity.class);
-                startActivity(intent, ActivityOptions.makeSceneTransitionAnimation(MainActivity.this,findViewById(R.id.btn1), "view").toBundle());
+                startActivity(intent);
             }
         });
 
@@ -83,28 +85,13 @@ public class MainActivity extends BaseActivity {
 
         RxPermissions rxPermissions = new RxPermissions(this);
         rxPermissions
-                .request(Manifest.permission.CAMERA).subscribe(granted -> {
+                .request(Manifest.permission.CAMERA, Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE).subscribe(granted -> {
             if (granted) { // Always true pre-M
                 SystemUtil.printlnInfo("权限获取");
             } else {
                 SystemUtil.printlnInfo("权限未获取");
             }
         });
-
-        OkGo.<TestApiBean>get("http://www.weather.com.cn/data/sk/101020700.html")
-                .params("test", "test")
-                .execute(new JsonCallback<TestApiBean>() {
-                    @Override
-                    public void onSuccess(Response<TestApiBean> response) {
-                        SystemUtil.printlnInfo("onSuccess " + response.body());
-                    }
-
-                    @Override
-                    public void onError(Response<TestApiBean> response) {
-                        super.onError(response);
-                        SystemUtil.printlnInfo("onError " + response.message());
-                    }
-                });
 
 	}
 

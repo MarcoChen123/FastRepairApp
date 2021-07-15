@@ -1,11 +1,20 @@
 package com.chengquan.framework.api;
 
+import com.chengquan.framework.BuildConfig;
+import com.chengquan.framework.util.MD5Util;
 import com.google.gson.Gson;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
 import com.lzy.okgo.callback.AbsCallback;
 import com.lzy.okgo.request.base.Request;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
+
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
+import java.text.SimpleDateFormat;
+import java.util.Set;
 
 import okhttp3.Response;
 
@@ -33,9 +42,23 @@ public abstract class JsonCallback<T> extends AbsCallback<T> {
         // 使用的设备信息
         // 可以随意添加,也可以什么都不传
         // 还可以在这里对所有的参数进行加密，均在这里实现
-        request.headers("header1", "HeaderValue1")//
-                .params("params1", "ParamsValue1")//
-                .params("token", "3215sdf13ad1f65asd4f3ads1f");
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy/M/d HH:mm:ss");
+        request.params("timestamp", sdf.format(System.currentTimeMillis()));
+
+        try {
+            JSONObject object = new JSONObject();
+            Set<String> set = request.getParams().urlParamsMap.keySet();
+            for (String key : set) {
+                object.put(key, request.getParams().urlParamsMap.get(key));
+            }
+            object.put("appSecret", BuildConfig.appSecret);
+            String sign = MD5Util.MD5(object.toString());
+            request.params("sign", sign );
+        } catch (Exception e) {
+
+        }
+
+
     }
 
     /**
@@ -55,7 +78,19 @@ public abstract class JsonCallback<T> extends AbsCallback<T> {
                 return convert.convertResponse(response);
             }
         }
+        String result = response.body().string();
+        JSONObject jsonObject = new JSONObject(result);
+        boolean success = jsonObject.getBoolean("success");
+        String msg = jsonObject.getString("msg");
+        int code = jsonObject.getInt("code");
+        String data = jsonObject.getString("data");
+        if(code != 0){
+            throw new IllegalArgumentException(msg);
+        }
 
+        if (type != String.class && type != JSONObject.class && type != JSONArray.class) {
+            return new Gson().fromJson(data, type);
+        }
         JsonConvert<T> convert = new JsonConvert<>(type);
         return convert.convertResponse(response);
     }
