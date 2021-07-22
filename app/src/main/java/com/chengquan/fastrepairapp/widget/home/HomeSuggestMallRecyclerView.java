@@ -6,7 +6,9 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.chengquan.fastrepairapp.R;
+import com.chengquan.fastrepairapp.bean.home.HomeDataBean;
 import com.chengquan.fastrepairapp.bean.home.HomeSuggestMallBean;
+import com.chengquan.framework.BuildConfig;
 import com.chengquan.framework.view.BaseRecyclerView;
 import com.chengquan.framework.view.BaseViewHolder;
 
@@ -14,7 +16,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class HomeSuggestMallRecyclerView extends BaseRecyclerView<HomeSuggestMallBean> {
+public class HomeSuggestMallRecyclerView extends BaseRecyclerView<HomeDataBean.ShopListBean> {
     public HomeSuggestMallRecyclerView(Context context) {
         super(context);
     }
@@ -38,10 +40,10 @@ public class HomeSuggestMallRecyclerView extends BaseRecyclerView<HomeSuggestMal
     }
 
     @Override
-    protected void setViewData(BaseViewHolder holder, HomeSuggestMallBean homeSuggestMallBean, int position) {
+    protected void setViewData(BaseViewHolder holder, HomeDataBean.ShopListBean homeSuggestMallBean, int position) {
         AppCompatImageView imageView = holder.findView(R.id.imageView);
         TextView textView = holder.findView(R.id.textview);
-        Glide.with(getContext()).load(homeSuggestMallBean.getRes()).into(imageView);
-        textView.setText(homeSuggestMallBean.getName());
+        Glide.with(getContext()).load(BuildConfig.apiUrl + homeSuggestMallBean.getLogo()).into(imageView);
+        textView.setText(homeSuggestMallBean.getCompanyName());
     }
 }

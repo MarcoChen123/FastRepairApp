@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import androidx.annotation.LayoutRes;
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -161,6 +162,7 @@ public abstract class BaseRecyclerView<T> extends RecyclerView {
         return mHeadView.size();
     }
 
+
     public class MyAdapter extends Adapter<BaseViewHolder> {
 
         @Override
@@ -225,6 +227,33 @@ public abstract class BaseRecyclerView<T> extends RecyclerView {
             //Footer类型
             return TYPE_FOOT;
 
+        }
+
+        @Override
+        public void onAttachedToRecyclerView(@NonNull RecyclerView recyclerView) {
+            super.onAttachedToRecyclerView(recyclerView);
+            RecyclerView.LayoutManager layoutManager = recyclerView.getLayoutManager();
+            if(layoutManager instanceof GridLayoutManager){
+                final GridLayoutManager gridLayoutManager = (GridLayoutManager) layoutManager;
+
+                gridLayoutManager.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup()
+                {
+                    @Override
+                    public int getSpanSize(int position)
+                    {
+                        int viewType = getItemViewType(position);
+                        if (viewType == TYPE_HEAD)
+                        {
+                            return gridLayoutManager.getSpanCount();
+                        } else if (viewType == TYPE_FOOT)
+                        {
+                            return gridLayoutManager.getSpanCount();
+                        }
+                        return 1;
+                    }
+                });
+                gridLayoutManager.setSpanCount(gridLayoutManager.getSpanCount());
+            }
         }
     }
 

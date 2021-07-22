@@ -20,9 +20,12 @@
     <application
         android:name="com.chengquan.framework.application.MainApplication"
         android:allowBackup="true"
+        android:supportsRtl="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
         android:resizeableActivity="true"
+        android:networkSecurityConfig="@xml/network_config"
         android:theme="@style/AppTheme">
         <activity
             android:name=".activity.MainActivity"
@@ -34,7 +37,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.HomeActivity"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
         <activity android:name=".activity.repairmall.EngineerSearchActivity"
             android:screenOrientation="portrait"/>
         <activity android:name=".activity.vip.VipRegisterActivity"
@@ -56,6 +60,26 @@
         <activity android:name=".activity.repairmall.SubmitOrderActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity android:name=".activity.publish.PublishSampleActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.publish.PublishServiceActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".activity.publish.PublishRequirementActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".activity.order.ServiceOrderActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".activity.order.OrderDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".activity.order.ProductOrderActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".activity.market.ProductMarketActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
 
         <meta-data
             android:name="android.notch_support"
