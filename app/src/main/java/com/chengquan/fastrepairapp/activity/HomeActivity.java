@@ -8,19 +8,15 @@ import com.chengquan.fastrepairapp.R;
 import com.chengquan.fastrepairapp.fragment.home.ExhibitionFragment;
 import com.chengquan.fastrepairapp.fragment.home.HomePageFragment;
 import com.chengquan.fastrepairapp.fragment.home.HomePublishFragment;
+import com.chengquan.fastrepairapp.fragment.home.MePageFragment;
 import com.chengquan.fastrepairapp.fragment.order.OrderFragment;
 import com.chengquan.framework.baseactivity.BaseActivity;
 import com.chengquan.framework.tab.TabView;
 import com.chengquan.framework.tab.TabViewChild;
-import com.chengquan.framework.util.SystemUtil;
-import com.qmuiteam.qmui.util.QMUIColorHelper;
-import com.qmuiteam.qmui.util.QMUIResHelper;
-import com.qmuiteam.qmui.widget.tab.QMUITabSegment;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import androidx.fragment.app.Fragment;
 import butterknife.BindView;
 
 public class HomeActivity extends BaseActivity {
@@ -45,7 +41,7 @@ public class HomeActivity extends BaseActivity {
         tabViewChildList.add(new TabViewChild(R.drawable.ic_order_select, R.drawable.ic_order_unselect, "订单", new OrderFragment()));
         tabViewChildList.add(new TabViewChild(R.drawable.ic_home_public, R.drawable.ic_home_public, "发布", new HomePublishFragment()));
         tabViewChildList.add(new TabViewChild(R.drawable.ic_liwu_select, R.drawable.ic_liwu_unselect, "展会", new ExhibitionFragment()));
-        tabViewChildList.add(new TabViewChild(R.drawable.ic_home_mine_select, R.drawable.ic_home_mine_unselect, "我的", new Fragment()));
+        tabViewChildList.add(new TabViewChild(R.drawable.ic_home_mine_select, R.drawable.ic_home_mine_unselect, "我的", new MePageFragment()));
         tabView.setTabViewChild(tabViewChildList, getSupportFragmentManager());
         tabView.setOnTabChildClickListener(new TabView.OnTabChildClickListener() {
             @Override

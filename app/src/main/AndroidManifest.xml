@@ -80,7 +80,18 @@
         <activity android:name=".activity.market.ProductMarketActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden"/>
-
+        <activity android:name=".activity.money.MoneyManageActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".activity.money.MoneyCenterActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".activity.money.GetMoneyActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".activity.money.MoneyDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
         <meta-data
             android:name="android.notch_support"
             android:value="true" />
