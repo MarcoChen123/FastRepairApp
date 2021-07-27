@@ -92,6 +92,24 @@
         <activity android:name=".activity.money.MoneyDetailActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".activity.study.StudyExamActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".activity.study.StudyListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".activity.study.MyCollectActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".activity.study.MyExamActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".activity.study.MyCertificateActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".activity.study.CertificateDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
         <meta-data
             android:name="android.notch_support"
             android:value="true" />

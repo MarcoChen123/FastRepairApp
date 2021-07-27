@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/chk_item"
+            android:layout_width="27dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:button="@null"
+            android:drawableStart="@drawable/chk_selector"
+            android:drawableLeft="@drawable/chk_selector"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="4dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:paddingLeft="8dp"
+            android:text="德马吉五轴机床海德汉530系统操作教程"
+            android:textColor="#ff000000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:gravity="center"
+            android:text="95分"
+            android:textColor="#ffd42300"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="考试通过"
+            android:textColor="#ff61cb3c"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="2019-10-26"
+            android:textColor="#ff999999"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_f4f4f4" />
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="10dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_pic"
+        android:layout_width="98dp"
+        android:layout_height="65dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/ic_test_stuly" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@+id/iv_pic"
+        android:lineSpacingExtra="5dp"
+        android:maxLines="2"
+        android:text="德马吉五轴机床海德汉530系统操作教程德马吉五轴机床德马吉五轴机床海德汉530系统操作教程德马吉五轴机床"
+        android:textColor="#ff282828"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_alignLeft="@+id/tv_title"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/iv_pic"
+        android:text="免费"
+        android:textColor="#ffd42300"
+        android:textSize="10sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_price"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/tv_price"
+        android:text="121839人在学"
+        android:textColor="#ff666666"
+        android:textSize="10sp" />
+
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+        android:layout_width="58dp"
+        android:layout_height="22dp"
+        android:layout_below="@+id/tv_title"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:text="取消收藏"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:qmui_backgroundColor="#016DB6"
+        app:qmui_radius="2dp" />
+
+</RelativeLayout>

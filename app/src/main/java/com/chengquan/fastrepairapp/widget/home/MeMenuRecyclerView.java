@@ -10,6 +10,7 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.chengquan.fastrepairapp.R;
 import com.chengquan.fastrepairapp.activity.money.MoneyManageActivity;
+import com.chengquan.fastrepairapp.activity.study.StudyExamActivity;
 import com.chengquan.fastrepairapp.bean.home.MeMenuBean;
 import com.chengquan.framework.view.BaseRecyclerView;
 import com.chengquan.framework.view.BaseViewHolder;
@@ -58,6 +59,10 @@ public class MeMenuRecyclerView extends BaseRecyclerView<MeMenuBean> {
                 switch (homeMenuBean.getClickUrl()) {
                     case "zjgl":
                         intent = new Intent(getContext(), MoneyManageActivity.class);
+                        getContext().startActivity(intent);
+                        break;
+                    case "xxks":
+                        intent = new Intent(getContext(), StudyExamActivity.class);
                         getContext().startActivity(intent);
                         break;
                     default:
